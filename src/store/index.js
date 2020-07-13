@@ -13,6 +13,7 @@ export default new Vuex.Store({
   modules: {
     inventory: {
       state: {
+        namespaced: true,
         supply: [
           {
             productName: "Yay Chips",
@@ -47,6 +48,7 @@ export default new Vuex.Store({
       }
     },
     machine: {
+      namespaced: true,
       state: {
         machineName: "Bender",
         lastServiced: new Date(),
